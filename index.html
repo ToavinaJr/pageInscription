@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="">
+            <div class="container">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" placeholder="Taper ici votre nom" required>
+            </div>
+
+            <div class="container">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" placeholder="Taper ici votre prénom" required>
+            </div>
+
+            <div class="container">
+                <label for="age">Votre age :</label>
+                <input type="number" id="age" placeholder="Taper ici votre age" required>
+                <p id="message-age"></p>
+            </div>
+
+            <div class="container">
+                <label for="mail">Adresse e-mail :</label>
+                <input type="email" id="mail" placeholder="Taper ici votre email" required>
+            </div>
+
+            <div class="container">
+                <label for="mdp-1">Entrer le mot de passe :</label>
+                <input type="password" id="mdp-1" placeholder="Mot de passe" required>
+            </div>
+
+            <div class="container">
+                <label for="mdp-2">Confirmer le mot de passe :</label>
+                <input type="password" id="mdp-2" placeholder="Mot de passe" required>
+                <p id="message-mdp"></p>
+            </div>
+            
+            <div class="container-1">
+                Sexe :
+            </div>
+            <div class="container-sexe">
+                <div class="container-2">
+                    <label for="homme">Homme </label>
+                    <input type="radio" name="sexe" id="homme">
+                </div>
+                <div class="container-3">
+                    <label for="femme">Femme</label>
+                    <input type="radio" name="sexe" id="femme">
+                </div>
+            </div>
+
+            <div class="container">
+                <input type="submit" value="Envoyer" id="envoyer">
+            </div>
+        </form>
+    </div>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
